@@ -1,6 +1,5 @@
 from flask import Flask
 from markupsafe import escape
-from flask import render_template
 from models.Veiculo import Veiculo
 from flask_migrate import Migrate
 
