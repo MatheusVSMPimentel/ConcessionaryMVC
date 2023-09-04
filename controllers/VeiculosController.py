@@ -10,14 +10,6 @@ def index():
     # query for ``User`` objects
         veiculos = db.session.query(Veiculo).all()
 
-    # list of ``User`` objects
-        #veiculos = session.scalars(statement).all()
-
-    # query for individual columns
-    ##    statement = select(Veiculo.Marca, Veiculo.Modelo)
-
-    # list of Row objects
-       ## rows = session.execute(statement).all()
     return render_template('index.html', veiculos = veiculos)
 
 def store():
