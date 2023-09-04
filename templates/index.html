@@ -1,13 +1,17 @@
 <!doctype html>
 <title>Hello from Flask</title>
 <h1>Hello, World!</h1>
-  <p>{{name.Marca}} {{name.Modelo}} {{name.Cor}} </p>
-  <p>Tipo do Veiculo 
-    {{ "Carro" if name.Tipo == 0 else "Moto" }}!
-  </p>
-  <p>Aceita Parcelamento: {{ "Sim" if name.Parcela else "Não" }}
-  </p>
-  <p>Estado do carro: {{ "Novo" if name.Novo else "Usado" }} Km Rodados: {{name.KmRodados}}
-  </p>
-  <p>Passagem Por Leilão: {{ "Sim" if name.Leilao else "Não" }}
-  </p>
+{% for veiculo in veiculos %}
+<p>{{veiculo.Marca}} {{veiculo.Modelo}} {{veiculo.Cor}} </p>
+<p>Tipo do Veiculo 
+  {{ "Carro" if veiculo.Tipo == 1 else "Moto" }}!
+</p>
+<p>Aceita Parcelamento: {{ "Sim" if veiculo.Parcela else "Não" }}
+</p>
+<p>Estado do carro: {{ "Novo" if veiculo.Novo else "Usado" }} Km Rodados: {{veiculo.KmRodados}}
+</p>
+<p>Passagem Por Leilão: {{ "Sim" if veiculo.Leilao else "Não" }}
+</p>
+{% endfor %}
+</ul>
+  

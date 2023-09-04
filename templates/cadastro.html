@@ -127,40 +127,68 @@ input[type=checkbox]:checked + label {
   <h1 class="title_contato"><i class="icon icon-file-text-o"></i> Fale Conosco</h1>
   
   <form method="post" action="#">
+    <div class="style-form-input full">
+      
+        <select name="Tipo" class="dropdown select_form" required>
+        
+        <option selected disabled class="form_select_option" value="">Tipo do veiculo?</option>
+        <option value=1 class="form_select_option">Carro</option>
+        <option value=2 class="form_select_option">Moto </option>
+        </select>
+    </div>    
       <div class="style-form-input full">
-          <input type="text" name="nome" required />
-          <label><i class="icon icon-user-1"></i>  Nome</label> 
+          <input type="text" name="Marca" required />
+          <label><i class="icon icon-user-1"></i>Marca</label> 
       </div>
       
       <div class="style-form-input">
-          <input type="text" name="email" required />
-          <label><i class="icon icon-mail-1"></i> E-mail</label> 
+          <input type="text" name="Model" required />
+          <label><i class="icon icon-mail-1"></i> Modelo</label> 
       </div>
       
       <div class="style-form-input right">
-          <input type="text" name="assunto" required />
-          <label><i class="icon icon-info-circled"></i> Assunto</label> 
+          <input type="text" name="Cor" required />
+          <label><i class="icon icon-info-circled"></i> Cor</label> 
       </div>
-      <div class="style-form-input full">
+      <div class="style-form-input right">
+        <input type="month" name="AnoFabricacao" required />
+        <label><i class="icon icon-info-circled"></i> Ano De Fabricacao</label> 
+    </div>
+
+    <div class="style-form-input full">
       
-          <select name="estadocivil" class="dropdown select_form" required>
-          
-          <option selected disabled class="form_select_option" value="">Sugestão de Artigos ?</option>
-          <option value="Html5" class="form_select_option">Html5</option>
-          <option value="Css3" class="form_select_option">Css3 </option>
-          <option value="jQuery" class="form_select_option">jQuery</option>                    
-          <option value="WordPress" class="form_select_option">WordPress</option>                    
+        <select name="Novo" class="dropdown select_form" required>
+        
+        <option selected disabled class="form_select_option" value="">Veiculo Novo?</option>
+        <option value=0 class="form_select_option">Não</option>
+        <option value=1 class="form_select_option">Sim </option>
+        </select>
+    </div>    
+    <div class="style-form-input right">
+        <input type="number" min="0" step="1" name="KmRodados" required />
+        <label><i class="icon icon-info-circled"></i> Kms Rodados</label> 
+    </div>
+    <div class="style-form-input full">
       
-          </select>
-      </div>    
+        <select name="Leilao" class="dropdown select_form" required>
+        
+        <option selected disabled class="form_select_option" value="">Passagem por leilão?</option>
+        <option value=0 class="form_select_option">Não</option>
+        <option value=1 class="form_select_option">Sim </option>
+        </select>
+    </div>    
+    <div class="style-form-input full">
       
+        <select name="Parcela" class="dropdown select_form" required>
+        
+        <option selected disabled class="form_select_option" value="">Aceita pagamento por parcela?</option>
+        <option value=0 class="form_select_option">Não</option>
+        <option value=1 class="form_select_option">Sim </option>
+        </select>
+    </div>    
       <div class="style-form-input full">
-          <textarea name="mensagem" required></textarea>
-          <label><i class="icon icon-comments"></i> Mensagem</label>
-      </div>
-      <div class="style-form-input full">
-          <input type="hidden" name="acao" value="enviar">
-          <button class="btn-submit">Enviar mensagem</button>
+          <input type="hidden" name="acao" value="enviar" >
+          <button class="btn-submit">Enviar Veiculo</button>
       
       </div>
   </form>

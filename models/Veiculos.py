@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 class Veiculo(db.Model):
-    __tablename__ = 'Veiculo'
+    __tablename__ = 'Veiculos'
     Id = db.Column(db.Integer, primary_key=True)
     Tipo = db.Column(db.Integer)
     Cor = db.Column(db.String(70))
@@ -16,15 +16,15 @@ class Veiculo(db.Model):
     Parcela = db.Column(db.Boolean)
     
     def __init__(self, tipo:int, cor:str, marca:str, modelo:str, anoFabricacao:str, novo:bool, kmRodados:int, leilao:bool,parcela:bool ):
-        self.Tipo = tipo
+        self.Tipo = int(tipo)
         self.Cor = cor
         self.Marca = marca
         self.Modelo = modelo
-        self.AnoFabricacao = anoFabricacao
-        self.Novo = novo
+        self.AnoFabricacao = anoFabricacao[0:4]
+        self.Novo = bool(novo)
         self.KmRodados = kmRodados
-        self.Leilao = leilao
-        self.Parcela = parcela
+        self.Leilao = bool(leilao)
+        self.Parcela = bool(parcela)
 
     @property
     def serialize(self):

@@ -9,7 +9,7 @@ veiculos_bp = Blueprint('veiculos_bp', __name__)
 
 #Essa rota pde ser crua ou ter um prefixo adicionado no APP.PY
 veiculos_bp.route('/', methods=['GET'])(index)
-veiculos_bp.route('/create', methods=['POST'])(store)
+veiculos_bp.route('/cadastro', methods=['POST', 'GET'])(store)
 
 veiculos_bp.route('/<int:user_id>', methods=['GET'])(show)
 veiculos_bp.route('/<int:user_id>/edit', methods=['POST'])(update)

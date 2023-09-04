@@ -24,6 +24,7 @@ https://docs.sqlalchemy.org/en/20/intro.html#installation
 https://docs.sqlalchemy.org/en/20/core/types.html
 Flask SqlAlchemy
 https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
-
+Jinja2 ## Linguagem operacional front end framework python nativo do flask
+https://jinja.palletsprojects.com/en/2.10.x/
 StackOverFlow
 https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip
