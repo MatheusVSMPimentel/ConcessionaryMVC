@@ -1,17 +1,31 @@
-#Projeto Concessionária MVC 
-
+# Projeto Concessionária MVC 
+  
+  
 **Indice**
-[TOCM]
-[TOC]
-
-##Primeiros passos:
-Para utilização desse projeto é necessario ter o [python instalado](https://www.python.org/) após a instalação do python seguir os passos da [instalação do FLASK e da maquina virtual](https://flask.palletsprojects.com/en/2.3.x/installation/
+  
+- [Projeto Concessionária MVC](#projeto-concessionária-mvc )
+  - [Primeiros passos:](#primeiros-passos )
+  - [Comandos](#comandos )
+  - [Tutoriais](#tutoriais )
+  - [Documentações](#documentações )
+    - [Flask](#flask )
+    - [Flask Migrate](#flask-migrate )
+    - [SqlAlchemy](#sqlalchemy )
+    - [Flask SqlAlchemy](#flask-sqlalchemy )
+    - [Jinja2](#jinja2 )
+  - [StackOverFlow](#stackoverflow )
+    - [MySql](#mysql )
+  
+## Primeiros passos:
+  
+Para utilização desse projeto é necessario ter o [python instalado](https://www.python.org/ ) após a instalação do python seguir os passos da [instalação do FLASK e da maquina virtual](https://flask.palletsprojects.com/en/2.3.x/installation/
 ) que é basicamente escolher um local para salvar o projeto e executar os comando 1 e 2 na parte [Comandos](#comandos )
 apos criar a maquina virtual a depender do comportamento dela você precisarar instalar os pacotes de biblioteca na sua maquina local ou na sua maquina virtual.
 Após abrir a maquina virtual criada no comando 1 e 2 só seguir com as instalações do pacote até a execução do app
-
-##Comandos
-
+  
+## Comandos
+  
+  
 1. **python3 -m venv .venv**  
 Comando cria uma pasta .venv que tem um executavel para sua maquina virtual
 obs.: as vezes o python não consegue encontrar o pacote na maquina virtual é so sair da maquina virtual e instalar a biblioteca diretamente na sua maquina 
@@ -40,33 +54,43 @@ Subi a migração para o BD
 Rodar o APP
 9. **flask run --debug**
 Rodar o APP em modo debug
-
-
-##Tutoriais
+  
+  
+## Tutoriais
+  
 https://www.youtube.com/watch?v=rqv8u31NZo8&list=PLAmj9NJfPKQZXEoa_4J4um_YB7VXK736J&index=1
 https://plainenglish.io/blog/flask-crud-application-using-mvc-architecture#the-project-structure
-
-##Documentações
-###Flask
+  
+## Documentações
+  
+### Flask
+  
 https://flask.palletsprojects.com/en/2.3.x/installation/
 https://flask.palletsprojects.com/en/2.3.x/quickstart/
-
-###Flask Migrate
+  
+### Flask Migrate
+  
 https://flask-migrate.readthedocs.io/en/latest/index.html
-
-###SqlAlchemy
+  
+### SqlAlchemy
+  
 https://docs.sqlalchemy.org/en/20/intro.html#installation
 https://docs.sqlalchemy.org/en/20/core/types.html
-
-###Flask SqlAlchemy
+  
+### Flask SqlAlchemy
+  
 https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
-
-
-###Jinja2 
+  
+  
+### Jinja2 
+  
 Linguagem operacional front end framework python nativo do flask
 https://jinja.palletsprojects.com/en/2.10.x/
-
-
-##StackOverFlow
-###MySql
+  
+  
+## StackOverFlow
+  
+### MySql
+  
 https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip
+  
